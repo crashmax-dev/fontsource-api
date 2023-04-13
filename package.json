@@ -11,11 +11,14 @@
   },
   "dependencies": {
     "@mantine/core": "^6.0.7",
+    "@mantine/notifications": "^6.0.7",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "zero-dependency": "^0.1.2"
   },
   "devDependencies": {
     "@crashmax/prettier-config": "^3.2.1",
+    "@types/css-font-loading-module": "^0.0.8",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
