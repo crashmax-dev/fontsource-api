@@ -38,9 +38,10 @@ export async function fetchFont(font: string, signal?: AbortSignal) {
   }
 }
 
-export async function fetchFontList(signal?: AbortController) {
+export async function fetchFontList(signal?: AbortSignal) {
   const response = await fetcher<Record<string, string>>(
-    'https://api.fontsource.org/fontlist'
+    'https://api.fontsource.org/fontlist',
+    { signal }
   )
 
   const fonts = Object.entries(response)

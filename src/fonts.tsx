@@ -35,7 +35,7 @@ export function FontProvider({ initialFont, children }: FontProviderProps) {
     const request = async () => {
       try {
         setIsLoading(true)
-        const fonts = await fetchFontList(abortController)
+        const fonts = await fetchFontList(abortController.signal)
         setFonts(fonts)
       } catch (err) {
         notifications.show({ message: (err as Error).message, color: 'red' })
